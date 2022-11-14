@@ -1,0 +1,735 @@
+root {
+
+    --primaryColor: RED;
+    --secondaryColor: #f7bcf7;
+    --lightColor: #ffff;
+    --bgColor-1: #171a1c;
+    --bgColor-2: #22282a;
+    --padding: 8%
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+
+
+}
+/* home */
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: #171a1c;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+span {
+
+    color: rgb(253, 0, 0);
+
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+
+}
+
+nav {
+    /* background: rgb(118, 46, 151); */
+    padding-top: 2.8rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+
+nav ul li {
+
+    list-style: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+
+
+}
+
+
+nav ul li a {
+
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+
+    color: red;
+
+
+
+}
+
+
+.btn {
+    background-color: red;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 38px;
+    border: 2px solid transparent;
+    transform: 0.4s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid #fff
+}
+
+.contant {
+
+    flex-grow: 1;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-text {
+
+    position: relative;
+    bottom: 70px;
+
+}
+
+h1 {
+    font-size: 4.65rem;
+    margin: 1.25rem;
+
+}
+
+h3 {
+
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+
+}
+
+h4 {
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+
+.social {
+
+    margin-top: 3.5rem;
+}
+
+.social a{
+
+    text-decoration: none;
+}
+.social img {
+
+
+    margin-right: 2rem;
+    width: 2.5rem;
+    transition: 0.4s;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+
+
+
+}
+
+
+.home .container-image {
+
+    width: 45%;
+    height: 90%;
+    position: relative;
+
+    align-self: flex-end;
+    
+}
+
+.home .container-image img {
+
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+    /* transition: ; */
+    
+}
+
+.home .container-image:hover .shap {
+
+    bottom: 4%;
+
+}
+
+.home .container-image:hover .pic-image {
+
+
+    left: 46%;
+     
+}
+
+/* end home */
+
+/* Start About Me */
+.about{
+
+background-color: #22282a;
+padding: 2rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.about .container-image{
+
+    width: 35%;
+}
+.about .container-image img{
+
+
+    width: 90%;
+}
+.about .container-text {
+
+
+    width: 33%;
+}
+
+p{
+/* color:#f7bcf7 ; */
+letter-spacing: 1px;
+line-height: 1.8rem;
+font-size: 1.3rem;
+}
+h5{
+
+font-size:1.37rem ;
+margin-bottom: 1.5rem;
+letter-spacing: 2px;
+
+}
+/* end About Me */
+/* Strat servicse */
+.services{
+background: #171a1c;
+padding: 2rem;
+
+
+}
+.text-center{
+
+    text-align: center;
+
+}
+
+.box{
+
+
+display: flex;
+justify-content: space-between;
+}
+
+.card{
+    background:#22282a ;
+    width: 300px;
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.card i{
+
+    font-size: 3.12rem;
+    text-align: center;
+    color: red;
+    margin: 2rem;
+}
+.card:hover{
+
+background-color: rgb(182, 44, 44);
+opacity: 0.9;
+cursor: pointer;
+/* transform: scaleX(1,0); */
+}
+/* end servicse */
+/* Start Skills */
+.Skills{
+
+    background-color: #22282a;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .Skills .container-image{
+    
+        width: 35%;
+    }
+    .Skills .container-image img{
+        width: 90%;
+    }
+    .Skills .container-text {
+    
+        width: 35%;
+    }
+
+    .Skills .container-skills{
+
+     width:50%;
+
+    }
+
+    .contant-skill{
+
+        display: flex;
+        flex-wrap:wrap;
+        margin-top: 4rem;
+    }
+
+    .my-skilled{
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 2rem 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .my-skilled img{
+
+        width: 70%;
+
+    }
+    /* end Skills */
+
+    /* Start footer */
+    footer{
+
+        padding: 2rem 8rem;
+        background: #171a1c;
+        
+    }
+    footer .contant-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .contant-footer p{
+        width: 500px;
+        color: rgb(255, 254, 254);
+        text-align: center;
+        margin-top: 1rem;
+
+
+    }
+
+    footer .contant-footer .end{
+        
+        color: rgb(255, 5, 5);
+        
+        margin-top: 3rem;
+
+    }
+    /* end footer */
+#menu{
+display: none;
+position: relative;
+appearance: none;
+border: none;
+outline: none; 
+background: none;
+user-select: none;
+margin-right: -51px;
+
+}
+
+#menu span{
+
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: #ffff;
+    transform-origin: 0 0;
+    transition: 0.4s;
+    margin-bottom: 5px;
+    
+
+}
+#menu.is-active span:nth-child(1){
+
+transform: translate(0px,-2px) rotate(45deg);
+
+
+
+}
+#menu.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translate(15px);
+}
+
+#menu.is-active span:nth-child(3){
+        
+        transform: translate(-3px,3px) rotate(-45deg);
+}
+#menu.is-active span{
+        
+        background-color: red;
+}
+                
+    /* respones */
+
+
+
+
+@media screen and (max-width: 575px){
+
+:root{
+--padding:1.5rem;
+
+}
+html{
+    width: 100%;
+font-size: 13px;
+
+}
+
+.home .container-image{
+    display: none;
+}
+
+nav{
+width: 90%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 82px;
+background-color: #171a1c;
+border-bottom: 1px solid #22282a;
+padding-top: 0;
+  z-index: 100;
+
+}
+
+nav ul{
+
+    display: none; 
+     position: fixed;
+     width: 100vw; 
+     height: 100vw;   
+    top: 0;
+    left: 0;
+    background: #22282a; 
+    }
+
+    nav ul.is-active{
+
+        display: block;
+
+    }
+
+nav ul li{
+    display: block;
+    text-align: center;
+    margin: 50px ;
+    margin-left: -10px;
+}
+nav > a{
+
+display: none;
+
+}
+
+.container-text{
+
+bottom: 0;
+
+}
+.social{
+
+margin-top: 70px;
+
+}
+h3{
+
+   margin-bottom: 70px; 
+}
+#menu{
+
+
+    display: block;
+}
+
+
+
+
+.about .container-image img{
+
+display: none;
+
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container-text{
+
+width: 483%;
+
+}
+
+.box{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    
+    margin-bottom: 10px;
+}
+
+.Skills .container-image img {
+
+
+    display: none;
+}
+
+
+.Skills .container-skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .Skills .container-skills h1 {
+        font-size: 4.65rem;
+        margin: 1.25rem;
+        display: flex;
+        justify-content: center;
+        letter-spacing: 0.1rem;
+    }
+
+    .contant-skill {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4rem;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .my-skilled img {
+        width: 77%;
+        height: 69%;
+    }
+    .card:hover {
+        background-color: none;
+        /* opacity: 0.9; */
+        /* cursor: pointer; */
+    }
+
+    footer .contant-footer p{
+
+    width: 199%;
+    }
+    footer .contant-footer h2{
+        display: flex;
+        /* width: 103%; */
+    }
+    footer .contant-footer .end {
+        
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 599px) and (max-width: 763px){
+
+    :root{
+    --padding:1.5rem;
+    
+    }
+    html{
+    
+    font-size: 13px;
+    
+    }
+    
+    .home .container-image{
+        display: none;
+    }
+    
+    nav{
+     
+    width: 84%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    background-color: #171a1c;
+    border-bottom: 1px solid #22282a;
+    padding-top: 0;
+      z-index: 100;
+    
+    }
+    
+    nav ul{
+    
+        display: none; 
+         position: fixed;
+         width: 100vw; 
+         height: 100vw;   
+        top: 0;
+        left: 0;
+        background: #22282a; 
+        }
+    
+        nav ul.is-active{
+    
+            display: block;
+    
+        }
+    
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin: 50px ;
+        margin-left: -10px;
+    }
+    nav > a{
+    
+    display: none;
+    
+    }
+    
+    .container-text{
+    
+    bottom: 0;
+    
+    }
+    .social{
+    
+    margin-top: 70px;
+    
+    }
+    h3{
+    
+       margin-bottom: 70px; 
+    }
+    #menu{
+    
+    
+        display: block;
+    }
+    
+    
+    
+    
+    .about .container-image img{
+    
+    display: none;
+    
+    }
+    
+    .about .container-text{
+    
+    width: 483%;
+    
+    }
+    
+    .box{
+    
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .Skills .container-image img {
+    
+    
+        display: none;
+    }
+    
+    
+    .Skills .container-skills {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+        .Skills .container-skills h1 {
+            font-size: 4.65rem;
+            margin: 1.25rem;
+            display: flex;
+            justify-content: center;
+            letter-spacing: 0.1rem;
+        }
+    
+        .contant-skill {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 4rem;
+            justify-content: end;
+            align-items: center;
+        }
+        .my-skilled img {
+            width: 77%;
+            height: 69%;
+        }
+        .card:hover {
+            background-color: none;
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    
+    
+        footer .contant-footer p{
+    
+        width: 200%;
+        }
+        footer .contant-footer h2{
+    
+            width: 103%;
+        }
+        footer .contant-footer .end {
+            
+            font-size: 1.1rem;
+        }
+    }
